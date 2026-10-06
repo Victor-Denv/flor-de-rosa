@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Flor de Rosa | Moda feminina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="aviso">Ganhe 15% OFF na 1ª compra com o cupom PRIMEIRAFLOR</div>
+<header><div class="nav">
+  <span class="logo" id="logo">FLOR DE ROSA</span>
+  <nav class="menu"><a href="#vitrine">New In</a><a href="#vitrine">Roupas</a><a href="#vitrine">Festa</a><a href="#vitrine">Moda Praia</a><a href="#vitrine">Outlet</a></nav>
+  <div class="acoes">
+    <button class="ic" id="bfav" aria-label="Favoritos">♡<b id="qfav">0</b></button>
+    <button class="ic" id="bsac" aria-label="Sacola">👜<b id="qtd">0</b></button>
+  </div>
+</div></header>
+
+<section class="hero">
+  <div>
+    <span class="tag">COLEÇÃO PRIMAVERA 2026</span>
+    <h1>Apaixone-se por <em>você mesma</em></h1>
+    <p>Peças pensadas para mulheres reais: leves, elegantes e com a cara do Brasil. Monte looks completos para cada momento.</p>
+    <a href="#vitrine" class="btn rosa">Ver coleção →</a><a href="#vitrine" class="btn ghost">Outlet</a>
+  </div>
+  <div class="arte" aria-hidden="true">
+    <svg viewBox="0 0 100 130" style="width:46%;left:8%;top:18%;transform:rotate(-8deg)"><use href="#s-vestido" fill="#fff"/></svg>
+    <svg viewBox="0 0 100 130" style="width:40%;right:8%;top:8%;transform:rotate(7deg)"><use href="#s-blusa" fill="#ffe3ec"/></svg>
+    <svg viewBox="0 0 100 130" style="width:36%;right:14%;bottom:4%;transform:rotate(-4deg)"><use href="#s-saia" fill="#3b1226"/></svg>
+  </div>
+</section>
+
+<div class="faixa"><div id="marq"></div></div>
+
+<section class="vantagens">
+  <div class="van"><b>Frete grátis</b>acima de R$799</div>
+  <div class="van"><b>Pague com Pix</b>e ganhe 5% OFF</div>
+  <div class="van"><b>Trocas</b>prazo de 30 dias</div>
+  <button class="van" id="personal" type="button"><b>Personal Shopper</b>Fale com nossa consultora</button>
+  <div class="van"><b>Entrega rápida</b>seu pedido em 24h*</div>
+</section>
+
+<section class="vit" id="vitrine">
+  <div class="titulo">
+    <h2>Novidades da semana</h2>
+    <div class="chips" id="chips"></div>
+    <div class="tools"><input id="busca" placeholder="Buscar peça" aria-label="Buscar"><select id="ord" aria-label="Ordenar"><option value="">Ordenar</option><option value="a">Menor preço</option><option value="d">Maior preço</option></select></div>
+  </div>
+  <div class="grade" id="grade"></div>
+</section>
+
+<div class="news">
+  <h2 class="serif" style="font-size:1.7rem">Entre para o clube Flor</h2>
+  <p style="color:var(--mudo)">Receba lançamentos e ofertas em primeira mão.</p>
+  <input type="email" placeholder="Seu melhor e-mail" aria-label="E-mail"><button class="btn rosa" id="nl" type="button">Quero</button>
+</div>
+
+<footer>
+  <span>© 2026 Flor de Rosa Moda Feminina · Todos os direitos reservados</span>
+  <button id="atend" type="button">Atendimento especial</button>
+</footer>
+<div class="ov" id="ov"></div>
+<aside class="gav" id="gav" aria-label="Sacola">
+  <div style="display:flex;justify-content:space-between;align-items:center"><h3 class="serif" style="font-size:1.4rem">Sua sacola</h3><button class="ic" id="fechar" type="button" aria-label="Fechar">✕</button></div>
+  <div class="barra"><i id="bar"></i></div><p id="fr" style="font-size:.78rem;color:var(--mudo)"></p>
+  <div class="lista" id="lista"></div>
+  <div style="display:flex;gap:.5rem;margin:.8rem 0"><input id="cupom" placeholder="Cupom de desconto"><button class="btn" id="apl" type="button" style="padding:.6rem 1.1rem">Aplicar</button></div>
+  <div id="tot" style="font-size:.9rem"></div>
+  <button class="btn rosa" id="fin" type="button" style="width:100%;justify-content:center;margin-top:.8rem">Finalizar compra</button>
+</aside>
+<div id="mod" role="dialog" aria-modal="true"></div>
+<div class="toast" id="toast"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="s-vestido" viewBox="0 0 100 130"><path d="M38 6h6q6 14 12 0h6l5 34-6 5 18 77H22l18-77-6-5z"/></symbol>
+  <symbol id="s-blusa" viewBox="0 0 100 130"><path d="M30 10l12-4q8 12 16 0l12 4 18 30-12 10-8-8v62H32V42l-8 8-12-10z"/></symbol>
+  <symbol id="s-calca" viewBox="0 0 100 130"><path d="M32 8h36l7 114H54L50 54l-4 68H25z"/></symbol>
+  <symbol id="s-saia" viewBox="0 0 100 130"><path d="M33 16h34l18 100H15z"/></symbol>
+</defs></svg>
+
+<!-- Painel oculto -->
+<div id="painel" role="dialog" aria-modal="true" aria-label="Atendimento">
+  <div class="pbar"><strong>Atendimento Personalizado</strong><button class="sair" id="sair" type="button">SAIR RÁPIDO (Esc)</button></div>
+  <div class="pc">
+    <div id="fa">
+      <h2>Você não está sozinha.</h2>
+      <p style="color:var(--mudo)">Conte o que aconteceu. Você escolhe o quanto quer informar.</p>
+      <div class="alerta"><b>Em perigo agora?</b> Ligue <a href="tel:190">190</a> (Polícia) ou <a href="tel:180">180</a> (Central de Atendimento à Mulher, gratuito, 24h).</div>
+      <details class="alerta"><summary><b>Conheça seus direitos</b></summary><p style="margin-top:.6rem">A Lei Maria da Penha (Lei 11.340/2006) protege mulheres da violência doméstica e familiar. Você pode pedir <b>medida protetiva de urgência</b> em qualquer delegacia, inclusive na Delegacia da Mulher (DEAM), sem precisar de advogada. Violência não é só física: ameaça, humilhação, controle financeiro e perseguição também são crimes. Procure também o CRAM ou a Casa da Mulher Brasileira da sua cidade.</p></details>
+      <form id="form" novalidate>
+        <label for="tipo">Tipo de violência</label>
+        <select id="tipo"><option value="">Selecione</option><option>Física</option><option>Psicológica</option><option>Sexual</option><option>Patrimonial</option><option>Moral</option><option>Perseguição / stalking</option><option>Ameaça</option><option>Outra</option></select>
+        <div class="l2"><div><label for="data">Quando aconteceu</label><input type="date" id="data"></div><div><label for="cidade">Cidade / bairro</label><input id="cidade" placeholder="Onde aconteceu"></div></div>
+        <label for="agressor">Sobre o agressor</label><input id="agressor" placeholder="Nome, apelido ou descrição (opcional)">
+        <label for="vinculo">Vínculo</label>
+        <select id="vinculo"><option value="">Prefiro não informar</option><option>Companheiro / ex-companheiro</option><option>Familiar</option><option>Colega de trabalho / chefe</option><option>Vizinho / conhecido</option><option>Desconhecido</option></select>
+        <label for="relato">Relato</label><textarea id="relato" placeholder="Descreva com suas palavras o que aconteceu"></textarea>
+        <label for="contato">Contato para retorno (opcional)</label><input id="contato" placeholder="Telefone ou e-mail seguro">
+        <p id="erro" style="color:#c00;font-size:.85rem;margin-top:.6rem"></p>
+        <div class="envios">
+          <button class="btn zap" type="button" id="bzap">Enviar por WhatsApp</button>
+          <button class="btn rosa" type="button" id="bmail">Enviar por e-mail</button>
+        </div>
+      </form>
+    </div>
+    <div class="ok" id="ok">
+      <h2>Quase lá</h2>
+      <p style="color:var(--mudo)">O aplicativo foi aberto com sua denúncia pronta. Confirme o envio por lá. Depois, apague a conversa se o aparelho for compartilhado.</p>
+      <button class="btn rosa" style="margin-top:1.5rem" id="sair2" type="button">Voltar para a loja</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
